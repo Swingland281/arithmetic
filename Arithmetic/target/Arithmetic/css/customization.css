@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1250px;
+	background-image: url(../img/bg6.jpg);
+}
+#center{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 800px;
+	height: 400px;
+	background-color: rgb(256,256,256,0.5);
+}
+h1{
+	text-align: center;
+	color: #37490b;
+	position: relative;
+	margin-top: 20px;
+}
+form{
+	color: #37490b;
+	position: relative;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+#part1,#part2,#part3,#part4{
+	font-size: 20px;
+	margin: 15px;
+}
+input,select{
+	font-family: "楷体";
+	font-size: 16px;
+	border: none;
+	opacity: 0.7;
+	margin-left: 15px;
+	border-radius: 20px;
+}
+#notice1,#notice2,#notice3,#notice4{
+	font-size: 15px;
+	color: red;
+	display: none;
+	margin: 5px;
+	text-align: center;
+}
+#btn button{
+	width: 140px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	border-radius: 30px;
+	color: white;
+	background-color:  #37490b;
+}
+#btn{
+	position: relative;
+	margin-left: 230px;
+}
+#btn2{
+	position: relative;
+	margin-left:260px;
+	display: none;
+}
+#stop,#start{
+	width: 150px;
+	height: 40px;
+	border: none;
+	margin: 10px;
+	border-radius: 30px;
+	color: white;
+	background-color:  #37490b;
+}
+/* .que{
+	margin-left: 100px;
+	width: 700px;
+  font-size: 20px;
+}
+.que td{
+	margin: 10px;
+} */

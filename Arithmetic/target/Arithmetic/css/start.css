@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	min-width: 1250px;
+	background-image: url(../img/bg9.jpg);
+	background-size: 100%;
+}
+.flip-container {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	text-align: center;
+	/*-webkit-perspective: 1000;*/
+
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(-180deg);
+}
+
+.flip-container, .front, .back {
+	width: 800px;
+	height: 400px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility:hidden;
+	position: absolute;
+	/* 	top: 0;
+        left: 0; */
+}
+/* front pane, placed above back */
+.front {
+	z-index: 1;
+}
+/* back, initially hidden pane */
+.back {
+	background-color:rgba(256,256,256,0.5);
+	transform: rotateY(-180deg);
+}
+.front img{
+	width: 250px;
+	height: 250px;
+}
+#btn button{
+	position: relative;
+	display: block;
+	/* 	margin:275px; */
+	background-color: #37490b;
+	width: 250px;
+	height:60px;
+	line-height: 60px;
+	border-radius: 30px;
+	color: white;
+	font-size:30px;
+}
+#btn {
+	/* 	color: white;
+        font-size:30px; */
+	margin-left:275px;
+	margin-top:100px;
+}
