@@ -14,5 +14,11 @@
     <select id="printQuestion" resultType="java.lang.String">
         SELECT question FROM errorbook WHERE name = #{name}
     </select>
+    <select id="selectFromA" resultType="java.lang.String">
+        SELECT tel FROM a WHERE id=#{id}
+    </select>
+    <select id="selectFromB" resultType="java.lang.String">
+        SELECT tel FROM b WHERE tel=#{tel}
+    </select>
 </mapper>
 

@@ -14,9 +14,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-@WebServlet(
-        name = "UserDao"
-)
+@WebServlet(name = "UserDao")
 public interface UserDao {
     void addUser(User var1);
 
@@ -25,4 +23,8 @@ public interface UserDao {
     void addQuestion(@Param("name") String name,@Param("question") String question);
 
     List printQuestion(@Param("name")String name);
+
+    String selectFromA(@Param("id")int id);
+
+    String selectFromB(@Param("tel")String tel);
 }

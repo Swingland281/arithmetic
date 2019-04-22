@@ -35,13 +35,7 @@
             <input type="text" name="k"  placehold="请填写1-10的正整数" onblur="checkk()" id="k">
             <span id="notice4"></span>
         </div>
-        <div id="part4">
-            <label>是否包含乘除</label>
-            <select name="flag2">
-                <option value="true">是</option>
-                <option value="false" selected>否</option>
-            </select>
-        </div>
+
         <div id="part5">
             <label>是否包含括号</label>
             <select name="flag1">

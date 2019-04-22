@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 public class ErrorBookTest {
 
     @Test
-    public void printQuestion() {
-//        ErrorBook errorBook = new ErrorBook();
-//        errorBook.test();
+    public void test() {
+       UserserviceImp userserviceImp = new UserserviceImp();
+       userserviceImp.printQuestion("aaa");
     }
 }

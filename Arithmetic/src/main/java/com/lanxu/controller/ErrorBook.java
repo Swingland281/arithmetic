@@ -23,8 +23,7 @@ import org.springframework.web.bind.annotation.*;
 public class ErrorBook{
     @Autowired
     UserserviceImp userserviceImp;
-    @Autowired
-    UserDao userDao;
+
 
     public void addQuestion(String name, String question){
         userserviceImp.addQuestion(name,question);

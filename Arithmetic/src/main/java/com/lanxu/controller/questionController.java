@@ -27,10 +27,9 @@ public class questionController {
     @ResponseBody
     public void question(HttpServletRequest request, HttpServletResponse response,
                        @RequestParam("max")String max, @RequestParam("min")String min,@RequestParam("k")String k,
-                       @RequestParam("n")String n,@RequestParam("flag1")String flag1,@RequestParam("flag2")String flag2
+                       @RequestParam("n")String n,@RequestParam("flag1")String flag1
     ) throws ServletException, IOException {
 
-        System.out.println("ssss");
         Lib lib = new Lib();
         JSONObject jsonObject= new JSONObject();
         List<Integer> answer = new ArrayList<Integer>();
